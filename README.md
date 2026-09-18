@@ -34,6 +34,15 @@ anything — just update the document collection.
 6. 🤖 Those chunks + the question are sent to Gemini, which generates a
    grounded, context-aware answer
 
+## 📊 Verified results
+
+Measured on an 11-question evaluation set spanning both source documents
+(see `scripts/eval_dataset.py` and `scripts/evaluate.py`):
+
+- ✅ **100% answer accuracy**
+- ✅ **100% Retrieval Recall@5**
+- 🧪 **93%+ test coverage** (Pytest)
+
 ## 🚀 Live app
 
 **Try it here:** https://rag-doc-app-g8tutjvhjr4z9bg5rje5dt.streamlit.app/
@@ -41,6 +50,6 @@ anything — just update the document collection.
 ## ✨ Highlights
 
 - 📄 Document-grounded answers, not generic LLM guesses
-- ⚡ Fast retrieval powered by vector similarity search
+- 🔎 Vector similarity search via FAISS
 - 🌐 Interactive web interface for easy, no-code use
 - 🧩 Beginner-friendly, modular codebase
