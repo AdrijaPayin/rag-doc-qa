@@ -13,7 +13,7 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
 # --- Embedding model (Gemini's hosted embedding API -- no local model,
 # no torch, no heavy downloads. This keeps the deployed app small and
 # avoids the memory issues that come with loading a local transformer.) ---
-EMBEDDING_MODEL_NAME = "text-embedding-004"
+EMBEDDING_MODEL_NAME = "gemini-embedding-001"
 EMBEDDING_DIMENSION = 768
 
 # --- Text chunking ---
