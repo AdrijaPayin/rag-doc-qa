@@ -1,0 +1,17 @@
+# Environment / secrets
+.env
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local test artifacts only -- the real index files (data/faiss_index.bin,
+# data/chunks.json) are committed on purpose so the deployed backend has
+# a prebuilt index without needing to run ingest.py on the server.
+data/test_index.bin
+data/test_chunks.json
