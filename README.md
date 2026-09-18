@@ -36,7 +36,7 @@ anything — just update the document collection.
 
 ## 🚀 Live app
 
-**Try it here:** [Streamlit link here]
+**Try it here:** https://rag-doc-app-g8tutjvhjr4z9bg5rje5dt.streamlit.app/
 
 ## ✨ Highlights
 
