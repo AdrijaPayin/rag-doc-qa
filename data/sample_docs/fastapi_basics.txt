@@ -1,0 +1,9 @@
+FastAPI is a modern Python web framework used for building APIs quickly. It is built on top of Starlette for the web parts and Pydantic for data validation. One of its main advantages is automatic request validation: if a client sends data that does not match the expected shape, FastAPI returns a clear error before your function code even runs.
+
+FastAPI automatically generates interactive API documentation. By default, this documentation is available at the /docs endpoint, which uses Swagger UI, and at /redoc, which uses ReDoc. This is generated directly from your route definitions and Pydantic models, so it always stays in sync with your actual code.
+
+To define an endpoint in FastAPI, you write a normal Python function and decorate it with something like @app.get("/path") or @app.post("/path"). The function's type hints tell FastAPI what data to expect and what to return, and Pydantic models are commonly used to describe the shape of request and response bodies.
+
+FastAPI applications are typically run using an ASGI server such as Uvicorn. A common command to start a FastAPI app during development is "uvicorn app.main:app --reload", where --reload automatically restarts the server whenever code changes are detected, which speeds up development.
+
+Testing FastAPI applications is usually done with Pytest combined with FastAPI's TestClient, which lets you send fake requests to your endpoints in tests without needing to run a real server. This makes it straightforward to reach high test coverage on API route logic.
