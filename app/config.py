@@ -30,4 +30,4 @@ FAISS_INDEX_PATH = os.path.join(DATA_DIR, "faiss_index.bin")
 CHUNKS_STORE_PATH = os.path.join(DATA_DIR, "chunks.json")
 
 # --- Generation model ---
-GEMINI_MODEL_NAME = "gemini-2.5-flash"
+GEMINI_MODEL_NAME = "gemini-3.6-flash"
